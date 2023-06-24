@@ -3,13 +3,17 @@ function [FD_boxes n_boxes r_boxes mean_FD mean_FD_stdv gray_scale_THS]=fractal_
 
 %% RICCARDO GASBARRONE 2022 Fractal_optimizer_slope.m 
 %% 
-%Questa funzione converte l'immagine selezionata in scala di grigi
-%(uint8). sulla base dell'immagine prescelta lo script binarizza l'immagine
-%in scala di grigi "I_gray" con soglia variabile da 0 a 255 con passo di 5.
-%Per ciascuna immagine binarizzata viene calcolata la dimensione frattale
-%con la funzione "boxcount.m", successivamente viene ottenuta la media e la
-%deviazione standard della dimensione frattale per ciascuna immagine. Viene
-%salvato anche il numero delle celle utilizzato per il box-counting.
+%%Copyright (C) 2023  Riccardo Gasbarrone
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or  any later version.
+%
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
 %%
 %This function converts the selected image to grayscale (uint8). based on
 %the chosen image the script binarizes the image in grayscale "I_gray" with
