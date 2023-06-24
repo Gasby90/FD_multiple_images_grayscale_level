@@ -1,5 +1,17 @@
 %% save_binarized_images.m
-%Riccardo Gasbarrone 2022 
+%%Copyright (C) 2023  Riccardo Gasbarrone
+
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or  any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%%
+
 %This script saves binary images thresholded at 50,	90, 135, 180, 205 and
 %230.
 
