@@ -3,6 +3,7 @@
 #Fractal dimension as a function of the grayscale level used as the binarization threshold (Routines collection).
 
 #Copyright (C) 2023  Riccardo Gasbarrone
+[![DOI](https://zenodo.org/badge/658008539.svg)](https://zenodo.org/badge/latestdoi/658008539)
 
 This MATLAB routines collection allows to perform the following steps to images: 
 • Conversion of the original image to grayscale.
