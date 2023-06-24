@@ -1,6 +1,6 @@
 #FD multiple images (boxcount) - grayscale level
-Fractal dimension as a function of the grayscale level used as the binarization threshold (Routines collection).
-Copyright (C) 2023  Riccardo Gasbarrone
+#Fractal dimension as a function of the grayscale level used as the binarization threshold (Routines collection).
+#Copyright (C) 2023  Riccardo Gasbarrone
 
 This MATLAB routines collection allows to perform the following steps to images: 
 • Conversion of the original image to grayscale.
