@@ -2,16 +2,18 @@ function [FD, Std_dev_FD, Df_binary_Otzu_SI, std_df_binary_Otzu_SI, I_gray]=frac
 
 
 %%  Fractal_optimizer.m
-%% RICCARDO GASBARRONE 2022
-%Questa funzione converte l'immagine selezionata in scala di grigi (uint8).
-%sulla base dell'immagine prescelta lo script binarizza l'immagine in scala
-%di grigi "I_gray" con soglia variabile da 0 a 255 con passo di 5. Per
-%ciascuna immagine binarizzata viene calcolata la dimensione frattale con
-%la funzione "boxcount.m", successivamente viene ottenuta la media
-%(Df_binary_SI) e la deviazione standard (std_df_binary_SI) della
-%dimensione frattale per ciascuna immagine.
-%%[0,255] for uint8 arrays.
+%%Copyright (C) 2023  Riccardo Gasbarrone
 
+%This program is free software; you can redistribute it and/or
+%modify it under the terms of the GNU General Public License
+%as published by the Free Software Foundation; either version 2
+%of the License, or  any later version.
+
+%This program is distributed in the hope that it will be useful,
+%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%GNU General Public License for more details.
+%%
 %This function converts the selected image to grayscale (uint8). based on
 %the chosen image the script binarizes the scaled image of gray "I_gray"
 %with a threshold varying from 0 to 255 with a pitch of 5. For each binary
@@ -19,7 +21,7 @@ function [FD, Std_dev_FD, Df_binary_Otzu_SI, std_df_binary_Otzu_SI, I_gray]=frac
 %mean is obtained (Df_binary_SI) and the standard deviation
 %(std_df_binary_SI) of the fractal size for each image.
 
-%Converto immagine in scala di grigi
+%grayscale image conversion
 I_gray=rgb2gray(I);
 
 %%
@@ -572,7 +574,6 @@ clearvars -except I I_gray GRAY_CH MIN FD Std_dev_FD Fractal_d MIN_std_dev multi
 % a threshold obtained using Otzu method. This default threshold is identical
 % to the threshold returned by graythresh. However, imbinarize only returns the binary image.
 % If you want to know the level or the effectiveness metric,
-%ATTENZIONE: particelle bianche, mentre casi precedenti particelle NERE
 level = graythresh(I_gray)
 BW = imbinarize(I_gray,level);
 %return 0 to 1
